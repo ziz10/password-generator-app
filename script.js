@@ -31,7 +31,7 @@ function inputOptions() {
     alert("Please enter a number less than 128.");
     return
   }
-  inputOptions();
+  inputOptions()
 //password criteria user selections
     confirmNumber = confirm("Do you want password to contain numbers?");
     confirmSpecialChar = confirm("Do you want password to contain special characters?");
