@@ -31,7 +31,7 @@ function inputOptions() {
     alert("Please enter a number less than 128.");
     return
   }
-
+  inputOptions();
 //password criteria user selections
     confirmNumber = confirm("Do you want password to contain numbers?");
     confirmSpecialChar = confirm("Do you want password to contain special characters?");
@@ -109,8 +109,10 @@ function writePassword() {
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
-
+ 
 }
 
+
+generatePassword();
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
